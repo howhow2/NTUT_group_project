@@ -15,7 +15,8 @@ import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
-    private String mathsQuest;
+    StringBuilder mathsQuest = new StringBuilder(32);
+
     private String mathsAns;
     private EditText edInput,edOutput;
     private Button btnNo1,btnNo2,btnNo3,btnNo4,btnNo5,btnNo6,btnNo7;
@@ -24,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EditText edInput =  findViewById(R.id.ed_input);
-        EditText edOutput =  findViewById(R.id.ed_output);
+        edInput =  (EditText) findViewById(R.id.ed_input);
+        edOutput =  (EditText)findViewById(R.id.ed_output);
         Button btnNo1 =  findViewById(R.id.btn_no1);
         Button btnNo2 = findViewById(R.id.btn_no2);
         Button btnNo3 = findViewById(R.id.btn_no3);
@@ -45,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
         Button btnDivide = findViewById(R.id.btn_divide);
         Button btnBP = findViewById(R.id.btn_backspace);
         Button btnCA = findViewById(R.id.btn_cleanAll);
+        Button btnOpB = findViewById(R.id.btn_openBracket);
+        Button btnClB = findViewById(R.id.btn_closeBracket);
         setContentView(R.layout.activity_main);
 
 
@@ -52,38 +55,131 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void btn1_OnClick(View view) {
-        Toast.makeText(this, "Toast 基本用法", Toast.LENGTH_LONG).show();
+        mathsQuest.append("1");
+        edInput =  (EditText) findViewById(R.id.ed_input);
+        edInput.setText(mathsQuest,TextView.BufferType.EDITABLE);
+        //Toast.makeText(this, mathsQuest, Toast.LENGTH_LONG).show();
     }
     public void btn2_OnClick(View view) {
+        mathsQuest.append("2");
+        edInput =  (EditText) findViewById(R.id.ed_input);
+        edInput.setText(mathsQuest,TextView.BufferType.EDITABLE);
         Toast.makeText(this, "Toast 基本用法", Toast.LENGTH_LONG).show();
     }
     public void btn3_OnClick(View view) {
+        mathsQuest.append("3");
+        edInput =  (EditText) findViewById(R.id.ed_input);
+        edInput.setText(mathsQuest,TextView.BufferType.EDITABLE);
         Toast.makeText(this, "Toast 基本用法", Toast.LENGTH_LONG).show();
     }
     public void btn4_OnClick(View view) {
+        mathsQuest.append("4");
+        edInput =  (EditText) findViewById(R.id.ed_input);
+        edInput.setText(mathsQuest,TextView.BufferType.EDITABLE);
         Toast.makeText(this, "Toast 基本用法", Toast.LENGTH_LONG).show();
     }
     public void btn5_OnClick(View view) {
+        mathsQuest.append("5");
+        edInput =  (EditText) findViewById(R.id.ed_input);
+        edInput.setText(mathsQuest,TextView.BufferType.EDITABLE);
         Toast.makeText(this, "Toast 基本用法", Toast.LENGTH_LONG).show();
     }
     public void btn6_OnClick(View view) {
+        mathsQuest.append("6");
+        edInput =  (EditText) findViewById(R.id.ed_input);
+        edInput.setText(mathsQuest,TextView.BufferType.EDITABLE);
         Toast.makeText(this, "Toast 基本用法", Toast.LENGTH_LONG).show();
     }
     public void btn7_OnClick(View view) {
+        mathsQuest.append("7");
+        edInput =  (EditText) findViewById(R.id.ed_input);
+        edInput.setText(mathsQuest,TextView.BufferType.EDITABLE);
         Toast.makeText(this, "Toast 基本用法", Toast.LENGTH_LONG).show();
     }
     public void btn8_OnClick(View view) {
+        mathsQuest.append("8");
+        edInput =  (EditText) findViewById(R.id.ed_input);
+        edInput.setText(mathsQuest,TextView.BufferType.EDITABLE);
         Toast.makeText(this, "Toast 基本用法", Toast.LENGTH_LONG).show();
     }
     public void btn9_OnClick(View view) {
+        mathsQuest.append("9");
+        edInput =  (EditText) findViewById(R.id.ed_input);
+        edInput.setText(mathsQuest,TextView.BufferType.EDITABLE);
         Toast.makeText(this, "Toast 基本用法", Toast.LENGTH_LONG).show();
     }
     public void btn0_OnClick(View view) {
+        mathsQuest.append("0");
+        edInput =  (EditText) findViewById(R.id.ed_input);
+        edInput.setText(mathsQuest,TextView.BufferType.EDITABLE);
         Toast.makeText(this, "Toast 基本用法", Toast.LENGTH_LONG).show();
     }
     public void btnDP_OnClick(View view) {
+        mathsQuest.append(".");
+        edInput =  (EditText) findViewById(R.id.ed_input);
+        edInput.setText(mathsQuest,TextView.BufferType.EDITABLE);
         Toast.makeText(this, "Toast 基本用法", Toast.LENGTH_LONG).show();
-    }public void btnNeg_OnClick(View view) {
+    }
+    public void btnNeg_OnClick(View view) {
+        mathsQuest.append("-");
+        edInput =  (EditText) findViewById(R.id.ed_input);
+        edInput.setText(mathsQuest,TextView.BufferType.EDITABLE);
+        Toast.makeText(this, "Toast 基本用法", Toast.LENGTH_LONG).show();
+    }
+    public void btnOpenBracket_OnClick(View view) {
+        mathsQuest.append("(");
+        edInput =  (EditText) findViewById(R.id.ed_input);
+        edInput.setText(mathsQuest,TextView.BufferType.EDITABLE);
+        Toast.makeText(this, "Toast 基本用法", Toast.LENGTH_LONG).show();
+    }
+    public void btnCloseBracket_OnClick(View view) {
+        mathsQuest.append(")");
+        edInput =  (EditText) findViewById(R.id.ed_input);
+        edInput.setText(mathsQuest,TextView.BufferType.EDITABLE);
+        Toast.makeText(this, "Toast 基本用法", Toast.LENGTH_LONG).show();
+    }
+
+    public void btnPlus_OnClick(View view) {
+        mathsQuest.append("+");
+        edInput =  (EditText) findViewById(R.id.ed_input);
+        edInput.setText(mathsQuest,TextView.BufferType.EDITABLE);
+        Toast.makeText(this, "Toast 基本用法", Toast.LENGTH_LONG).show();
+    }
+    public void btnMinus_OnClick(View view) {
+        mathsQuest.append("-");
+        edInput =  (EditText) findViewById(R.id.ed_input);
+        edInput.setText(mathsQuest,TextView.BufferType.EDITABLE);
+        Toast.makeText(this, "Toast 基本用法", Toast.LENGTH_LONG).show();
+    }
+    public void btnMultiply_OnClick(View view) {
+        mathsQuest.append("*");
+        edInput =  (EditText) findViewById(R.id.ed_input);
+        edInput.setText(mathsQuest,TextView.BufferType.EDITABLE);
+        Toast.makeText(this, "Toast 基本用法", Toast.LENGTH_LONG).show();
+    }
+    public void btnDivide_OnClick(View view) {
+        mathsQuest.append("/");
+        edInput =  (EditText) findViewById(R.id.ed_input);
+        edInput.setText(mathsQuest,TextView.BufferType.EDITABLE);
+        Toast.makeText(this, "Toast 基本用法", Toast.LENGTH_LONG).show();
+    }
+    public void btnBP_OnClick(View view) {
+        int count;
+        count = mathsQuest.length();
+        mathsQuest.deleteCharAt(count-1);
+        edInput =  (EditText) findViewById(R.id.ed_input);
+        edInput.setText(mathsQuest,TextView.BufferType.EDITABLE);
+        Toast.makeText(this, "Toast 基本用法", Toast.LENGTH_LONG).show();
+    }
+    public void btnCA_OnClick(View view) {
+        int count;
+        count = mathsQuest.length();
+        mathsQuest.delete(0,count);
+        edInput =  (EditText) findViewById(R.id.ed_input);
+        edInput.setText(mathsQuest,TextView.BufferType.EDITABLE);
+        Toast.makeText(this, "mathsQuest", Toast.LENGTH_LONG).show();
+    }
+    public void btnEnter_OnClick(View view) {
         Toast.makeText(this, "Toast 基本用法", Toast.LENGTH_LONG).show();
     }
 
