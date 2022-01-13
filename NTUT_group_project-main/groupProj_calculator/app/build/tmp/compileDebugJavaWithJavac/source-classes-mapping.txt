@@ -1,0 +1,14 @@
+com/example/groupproj_calculator/MainActivity3.java
+ com.example.groupproj_calculator.MainActivity3
+ com.example.groupproj_calculator.MainActivity3$1
+com/example/groupproj_calculator/MainActivity.java
+ com.example.groupproj_calculator.MainActivity
+ com.example.groupproj_calculator.MainActivity$1
+ com.example.groupproj_calculator.MainActivity$2
+com/example/groupproj_calculator/MainActivity2.java
+ com.example.groupproj_calculator.MainActivity2
+ com.example.groupproj_calculator.MainActivity2$1
+ com.example.groupproj_calculator.MainActivity2$2
+ com.example.groupproj_calculator.MainActivity2$3
+com/example/groupproj_calculator/BuildConfig.java
+ com.example.groupproj_calculator.BuildConfig
